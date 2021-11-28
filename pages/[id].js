@@ -36,8 +36,7 @@ export default function Entry({ itemData }) {
           </Link>
           </h4>
           <br/>
-          <p className="card-text">{itemData.post_content}</p>
-          
+          <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.post_content}} />
         </div>
       </article>
     </Layout>
